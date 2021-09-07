@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://cherry-areka.github.io/</id>
     <title>Areka 的小窝</title>
-    <updated>2021-09-07T07:59:51.742Z</updated>
+    <updated>2021-09-07T08:04:22.993Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://cherry-areka.github.io/"/>
     <link rel="self" href="https://cherry-areka.github.io/atom.xml"/>
@@ -10,6 +10,377 @@
     <logo>https://cherry-areka.github.io/images/avatar.png</logo>
     <icon>https://cherry-areka.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Areka 的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[路径求交]]></title>
+        <id>https://cherry-areka.github.io/post/lu-jing-qiu-jiao/</id>
+        <link href="https://cherry-areka.github.io/post/lu-jing-qiu-jiao/">
+        </link>
+        <updated>2021-09-07T08:03:49.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>You know?</p>
+<p>What do it attract you is what you like.</p>
+<p>If you don't like it,</p>
+<p>Just turn back,</p>
+<p>Then continue on another road to go through,</p>
+<p>And you will get the great Extrication.</p>
+</blockquote>
+<h3 id="现有路径-a-bc-d要求求出两条路径的交点">现有路径 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(a, b)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>c</mi><mo separator="true">,</mo><mi>d</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(c, d)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mclose">)</span></span></span></span>，要求求出两条路径的交点。</h3>
+<ul>
+<li>
+<p>首先考虑两条路径只有三种情况</p>
+<ol>
+<li>不相交。</li>
+<li>交集部分完全位于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span></span></span></span>​ 以 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>lca</mtext></mrow><annotation encoding="application/x-tex">\text{lca}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">lca</span></span></span></span></span>​ 为分割的某一半内。</li>
+<li>交集穿过 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a,b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span></span></span></span> 的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>lca</mtext></mrow><annotation encoding="application/x-tex">\text{lca}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">lca</span></span></span></span></span>。</li>
+</ol>
+</li>
+<li>
+<p>如果对 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo separator="true">,</mo><mi>c</mi><mo separator="true">,</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">a,b,c,d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span></span></span></span> 四点分别两两求 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>lca</mtext></mrow><annotation encoding="application/x-tex">\text{lca}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">lca</span></span></span></span></span> 的话，一定有两点满足 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>=</mo><mi>l</mi><mi>c</mi><mi>a</mi><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo><mo separator="true">,</mo><mi>q</mi><mo>=</mo><mi>l</mi><mi>c</mi><mi>a</mi><mo>(</mo><mi>c</mi><mo separator="true">,</mo><mi>d</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">p=lca(a,b),q=lca(c,d)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">c</span><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mclose">)</span></span></span></span> (取两点深度较小的即可)</p>
+</li>
+<li>
+<p>若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mi mathvariant="normal">≠</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">p \neq q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel"><span class="mrel"><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.69444em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="rlap"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="inner"><span class="mrel"></span></span><span class="fix"></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.19444em;"><span></span></span></span></span></span></span><span class="mrel">=</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span>，则 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>a</mi><mo separator="true">,</mo><mi>b</mi><mo>)</mo><mi mathvariant="normal">、</mi><mo>(</mo><mi>c</mi><mo separator="true">,</mo><mi>d</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(a,b)、(c,d)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span><span class="mord cjk_fallback">、</span><span class="mopen">(</span><span class="mord mathdefault">c</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">d</span><span class="mclose">)</span></span></span></span> 相交，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo separator="true">,</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p,q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span> 即为交点的两端</p>
+</li>
+<li>
+<p>若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>=</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p = q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span></span></span></span>，有两种情况。</p>
+<ol>
+<li>路径相交，交于一点，此时 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>p</mi><mo>=</mo><mi>q</mi><mo>=</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">p = q = l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">q</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi></mrow><annotation encoding="application/x-tex">l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span> 为深度较小的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>lca</mtext></mrow><annotation encoding="application/x-tex">\text{lca}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord text"><span class="mord">lca</span></span></span></span></span>)。</li>
+<li>路径不相交，此时 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>e</mi><msub><mi>p</mi><mi>p</mi></msub><mo>=</mo><mi>d</mi><mi>e</mi><msub><mi>p</mi><mi>q</mi></msub><mo>&lt;</mo><mi>l</mi></mrow><annotation encoding="application/x-tex">dep_p = dep_q &lt; l</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord"><span class="mord mathdefault">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">p</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.980548em;vertical-align:-0.286108em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span><span class="mord"><span class="mord mathdefault">p</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.15139200000000003em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.03588em;">q</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span>。</li>
+</ol>
+</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[P4032 Solution]]></title>
+        <id>https://cherry-areka.github.io/post/p4032-solution/</id>
+        <link href="https://cherry-areka.github.io/post/p4032-solution/">
+        </link>
+        <updated>2021-09-07T08:03:15.000Z</updated>
+        <content type="html"><![CDATA[<h3 id="题意">题意</h3>
+<ul>
+<li>我们把食物分为两个集合，熟的为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，不熟为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>d</mi><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">Add_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">d</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​​：在集合 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​​ 中加入一个元素，此元素在经过 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>t</mi><mrow><mi>i</mi><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">t_{id}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mord mathdefault mtight">d</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​​ 时间后会自动加入 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​​，且在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​​ 中消失。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">Ask_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>：询问 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中元素的最小编号，若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub><mo>=</mo><mi mathvariant="normal">∅</mi></mrow><annotation encoding="application/x-tex">S_1 = \varnothing</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.66334em;vertical-align:-0.08167em;"></span><span class="mord amsrm">∅</span></span></span></span> ，则输出 <code>Yazid is angry.</code>。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">Ask_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>：询问某个特定编号的食物存在于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中，若存在，输出 <code>Succeeded!</code>，若不存在，则查询 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中是否存在该元素，若存在，输出该元素还需多长时间加入集合 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中，若 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 中也不存在该元素，则输出 <code>YJQQQAQ is angry.</code>。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">Ask_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​：查询集合 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​ 中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>[</mo><mi>l</mi><mo separator="true">,</mo><mi>r</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">[l,r]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">]</span></span></span></span> 内共有多少元素。</li>
+</ul>
+<h3 id="分析">分析</h3>
+<ul>
+<li>提供思路：树状数组+两个优先队列+一个双端队列（可能<s>有点</s>十分麻烦）。</li>
+<li>首先针对 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">Ask_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 我们自然可以想到树状数组。</li>
+<li>接下来我们想如何维护 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>d</mi><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">Add_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">d</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">Ask_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">Ask_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。</li>
+<li>可以想到，用优先队列维护 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​，在每次查询前将队列中的元素放进 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​ 的优先队列。</li>
+<li>这里的两个优先队列排序的关键字不同，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的优先队列，第一关键字为编号，因为已经成熟，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">S_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的优先队列第一关键字为成熟时间，因为我们要贪心的判断是否成熟</li>
+<li>对于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>d</mi><msub><mi>d</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">Add_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">d</span><span class="mord"><span class="mord mathdefault">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 我们直接模拟即可，用 <code>deque</code> 来维护编号的信息，并注意更新树状数组。</li>
+<li>对于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">Ask_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 我们查询 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>S</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">S_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​ 所对应的优先队列是否为空，若不为空，输出队首即可。</li>
+<li>对于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">Ask_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>​ 我们查询编号对应的 <code>deque</code> 是否为空，直接模拟即可，注意运用<strong>懒惰删除法</strong>更新优先队列（不懂的可以看 <code>Dijkstra</code> 的题解，<a href="https://www.luogu.com.cn/problem/solution/P4779">这边请</a>）。</li>
+<li>对于 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>s</mi><msub><mi>k</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">Ask_3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 使用树状数组直接干碎即可。</li>
+</ul>
+<h3 id="吐槽">吐槽</h3>
+<blockquote>
+<p>怎么会有卡空间这档子破事.jpg</p>
+<p>原来是我写挂了.jpg</p>
+<p>关于一个题交了4页这档子破事</p>
+</blockquote>
+<h3 id="code">Code</h3>
+<pre><code class="language-cpp">const int maxn = 1e5 + 1;
+
+int n, tot, a[maxn];
+bool vis[500001];
+
+class Tree_Array {
+    private:
+        int t[maxn];
+        
+        inline int lowbit(int x) {
+            return x &amp; (-x);
+        }
+    
+    public:
+        
+        inline void init() {
+            memset(t, 0, sizeof(t));
+        }
+
+        inline void Add(int pos, int v) {
+            while(pos &lt;= n)
+                t[pos] += v, pos += lowbit(pos);
+        }
+
+        inline int Ask(int pos) {
+            int res = 0;
+            while(pos)
+                res += t[pos], pos -= lowbit(pos);
+            return res;
+        }
+};
+
+Tree_Array T;
+
+class Node {
+    public:
+        int id, nid, tm;
+        inline friend bool operator &lt; (const Node &amp;a, const Node &amp;b) {
+            if(a.id == b.id)
+                return a.tm &gt; b.tm;
+            else
+                return a.id &gt; b.id;
+        }
+        Node() {}
+        Node(int i, int i1, int t) : id(i), nid(i1), tm(t) {}
+};
+
+class Node1 {
+    public:
+        int id, nid, tm;
+        inline friend bool operator &lt; (const Node1 &amp;a, const Node1 &amp;b) {
+            if(a.tm == b.tm)
+                return a.id &gt; b.id;
+            else
+                return a.tm &gt; b.tm;
+        }
+        Node1() {}
+        Node1(int i, int i1, int t) : id(i), nid(i1), tm(t) {}
+};
+
+class Node2 {
+    public:
+        int nid, tm;
+        Node2() {}
+        Node2(int i1, int t) : nid(i1), tm(t) {}
+};
+
+priority_queue &lt;Node&gt; Q1;
+priority_queue &lt;Node1&gt; Q2;
+
+deque &lt;Node2&gt; v[maxn];
+
+inline void init() {
+    tot = 0;
+    memset(vis, 0, sizeof(vis));
+    while(!Q1.empty())
+        Q1.pop();
+    while(!Q2.empty())
+        Q2.pop();
+    for(int i = 1; i &lt; maxn; ++i)
+    	while(!v[i].empty())
+    		v[i].pop_front();
+    T.init();
+}
+signed main() {
+    int ss = read();
+    while(ss--) {
+        init();
+        n = read();
+        for(int i = 1; i &lt;= n; ++i)
+            a[i] = read();
+        int Qs = read();
+        for(int i = 1, id; i &lt;= Qs; ++i) {
+            int t = read(), opt = read();
+            while(!Q2.empty() and Q2.top().tm &lt;= t) {
+                Node1 x = Q2.top();
+                Q2.pop();
+                if(vis[x.nid])
+                    continue;
+                Node pp;
+                pp.id = x.id, pp.nid = x.nid, pp.tm = x.tm;
+                Q1.push(pp);
+                T.Add(x.id, 1);
+            }
+
+            if(opt == 0) {
+                id = read();
+                Q2.push(Node1(id, ++tot, a[id] + t));
+                v[id].push_back(Node2(tot, a[id] + t));
+            }
+
+            if(opt == 1) {
+                if(Q1.empty())
+                    puts(&quot;Yazid is angry.&quot;);
+                else {
+                    Node x;
+                    x.id = -1;
+                    while(!Q1.empty()) {
+                        x = Q1.top();
+                        Q1.pop();
+                        if(vis[x.nid])
+                            continue;
+                        break;
+                    }
+                    if(x.id == -1 or v[x.id].empty() or vis[x.nid])
+                        puts(&quot;Yazid is angry.&quot;);
+                    else {
+                        T.Add(x.id, -1);
+                        v[x.id].pop_front();
+                        vis[x.nid] = true;
+                        printf(&quot;%d\n&quot;, x.id);
+                    }
+                }
+            }
+
+            if(opt == 2) {
+                id = read();
+                if(v[id].empty())
+                    puts(&quot;YJQQQAQ is angry.&quot;);
+                else {
+                    deque &lt;Node2&gt; :: iterator it = v[id].begin();
+                    Node2 x = *it;
+                    if(x.tm &gt; t)
+                        printf(&quot;%d\n&quot;, x.tm - t);
+                    else {
+                        vis[x.nid] = true;
+                        T.Add(id, -1);
+                        v[id].pop_front();
+                        puts(&quot;Succeeded!&quot;);
+                    }
+                }
+            }
+
+            if(opt == 3) {
+                int l = read(), r = read();
+                printf(&quot;%d\n&quot;, T.Ask(r) - T.Ask(l - 1));
+            }
+        }
+    }
+
+	init();
+
+    #ifndef ONLINE_JUDGE
+        getchar();
+    #endif
+    return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[P7771 Solution]]></title>
+        <id>https://cherry-areka.github.io/post/p7771-solution/</id>
+        <link href="https://cherry-areka.github.io/post/p7771-solution/">
+        </link>
+        <updated>2021-09-07T08:02:52.000Z</updated>
+        <content type="html"><![CDATA[<p>提供链式前向星思路，本质是打乱 <code>nxt</code> 指针。</p>
+<p>相信有很多同学和我一样一开始写的链式前向星，但是交上去发现 <code>T</code> 掉了，那么现在我们来谈谈如何拯救链式前向星(<s>就死活不用 <code>vector</code> 存图</s>)。</p>
+<p><code>T</code>掉的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>C</mi><mi>o</mi><mi>d</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Code</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">o</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span></span></span></span>：</p>
+<pre><code class="language-cpp">class Edge {
+    public:
+        int to, nxt;
+        Edge() {}
+        Edge(int a, int b) : to(a), nxt(b) {}
+};
+
+Edge E[maxn];
+int n, m, tot, top, cnt, sta[maxn], du[maxn],
+    dd[maxn], head[maxn], dx[maxn];
+bool vis[maxn];
+
+inline void Add_Edge(int u, int v) {
+    E[++tot] = Edge(v, head[u]);
+    head[u] = tot;
+}
+
+inline void Dfs(int x) {
+    while(dd[x]) {
+        int minnid = 0, minnv = n + 1;
+        for(int i = head[x]; i; i = E[i].nxt) {
+            if(vis[i])
+                continue;
+            if(minnv &gt; E[i].to)
+                minnv = E[i].to, minnid = i;
+        }
+        if(minnid == 0) {
+            sta[++top] = x;
+            return;
+        }
+        vis[minnid] = true, cnt++, dd[x]--, Dfs(minnv);
+    }
+    sta[++top] = x;
+}
+
+signed main() {
+    n = read(), m = read();
+    for(int i = 1; i &lt;= m; ++i) {
+        int u = read(), v = read();
+        Add_Edge(u, v);
+        dd[u]++, du[v]++;
+    }
+
+    int ff = 0, s = 0, t = 0;
+    int cnt = 0;
+    for(int i = 1; i &lt;= n; ++i) {
+        if(dd[i] != du[i]) {
+            cnt++;
+            if(dd[i] == du[i] + 1)
+                s = i;
+            if(dd[i] == du[i] - 1)
+                t = i;
+        }
+    }
+    
+    if(cnt != 2 and cnt != 0) {
+        puts(&quot;No&quot;);
+        return 0;
+    }
+
+    if(!s)
+        s = 1;
+    Dfs(s);
+    for(int i = top; i &gt;= 1; --i)
+        printf(&quot;%d &quot;, sta[i]);
+
+    #ifndef ONLINE_JUDGE
+        getchar();
+    #endif
+    return 0;
+}
+</code></pre>
+<p>还记得 <code>Dinic</code> 的<a href="https://www.luogu.com.cn/problem/solution/P3376">当前弧优化</a>吗，其实不论是 <code>vector</code> 存图，还是邻接表存图，都是利用了这个原理。因为我们会发现，当我们遍历边找到欧拉路时，虽然有 <code>vis</code> 标记，但我们依然会遍历到很多无用的边，像这样：<br>
+<img src="https://cdn.luogu.com.cn/upload/image_hosting/afjxl1gg.png" alt="" loading="lazy"></p>
+<p>那么当一个点的度数很大时，我们的前向星就会及其的慢，怎么办呢？</p>
+<p>我们发现，题目中要求输出字典序较小的路径，那么我们只需要保证遍历当前边时，到达点(即 <code>E[i].to or to[i]</code>) 比这条边小的边都已经遍历到，那我们就可以直接开始从当前边遍历即可。</p>
+<p>那么如何保证呢？</p>
+<p>我们通过打乱 <code>nxt</code> 指针来实现，即 <code>head[x]</code> 指向到达点最小的边，<code>head[x]</code> 的 <code>nxt</code> 指针指向到达点第二小的边 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⋯</mo></mrow><annotation encoding="application/x-tex">\cdots</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.31em;vertical-align:0em;"></span><span class="minner">⋯</span></span></span></span> 到达点最大的边指向 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span>，这样我们就可以使用当前弧优化啦！</p>
+<p>像这样(绿色指针即为 <code>nxt</code> 指针)：<img src="https://cdn.luogu.com.cn/upload/image_hosting/28ui4o6k.png" alt="" loading="lazy"></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>A</mi><mi>c</mi><mi>c</mi><mi>e</mi><mi>p</mi><mi>t</mi><mi>e</mi><mi>d</mi><mtext> </mtext><mi>C</mi><mi>o</mi><mi>d</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">Accepted \ Code</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">A</span><span class="mord mathdefault">c</span><span class="mord mathdefault">c</span><span class="mord mathdefault">e</span><span class="mord mathdefault">p</span><span class="mord mathdefault">t</span><span class="mord mathdefault">e</span><span class="mord mathdefault">d</span><span class="mspace"> </span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault">o</span><span class="mord mathdefault">d</span><span class="mord mathdefault">e</span></span></span></span>：</p>
+<pre><code class="language-cpp">inline void Dfs(int x) {
+    while(dd[x]) {
+        int minnid = cur[x], minnv = E[cur[x]].to;
+        cur[x] = E[cur[x]].nxt;
+        if(minnid == 0) {
+            sta[++top] = x;
+            return;
+        }
+        vis[minnid] = true, cnt++, dd[x]--, Dfs(minnv);
+    }
+    sta[++top] = x;
+}
+</code></pre>
+<pre><code class="language-cpp">
+    for(int i = 1; i &lt;= n; ++i) {
+        pp = 0;
+        for(int e = head[i]; e; e = E[e].nxt)
+            ss[++pp] = Node(E[e].to, e);
+        sort(ss + 1, ss + pp + 1);
+        // 将 i 连到的所有边取出并排序
+        head[i] = ss[1].id;
+        int p = head[i];
+        for(int j = 2; j &lt;= pp; ++j)
+            E[p].nxt = ss[j].id, p = E[p].nxt;
+        E[p].nxt = 0;
+        // 进行 nxt 指针的打乱，注意最后的 nxt 要指到 0
+    }
+
+    memcpy(cur, head, sizeof(cur));
+    // 初始的当前弧为 head
+
+    if(!s)
+        s = 1;
+    Dfs(s);
+    for(int i = top; i &gt;= 1; --i)
+        printf(&quot;%d &quot;, sta[i]);
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[UVA210-Solution]]></title>
         <id>https://cherry-areka.github.io/post/UVA210-Solution/</id>
