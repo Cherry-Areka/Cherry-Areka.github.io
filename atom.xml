@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://cherry-areka.github.io/</id>
+    <id>https://Cherry-Areka.github.io/</id>
     <title>Areka 的小窝</title>
-    <updated>2021-09-07T08:07:07.528Z</updated>
+    <updated>2021-09-07T08:17:09.869Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://cherry-areka.github.io/"/>
-    <link rel="self" href="https://cherry-areka.github.io/atom.xml"/>
+    <link rel="alternate" href="https://Cherry-Areka.github.io/"/>
+    <link rel="self" href="https://Cherry-Areka.github.io/atom.xml"/>
     <subtitle>That&apos;s a worm house where I can write my memory and life.</subtitle>
-    <logo>https://cherry-areka.github.io/images/avatar.png</logo>
-    <icon>https://cherry-areka.github.io/favicon.ico</icon>
+    <logo>https://Cherry-Areka.github.io/images/avatar.png</logo>
+    <icon>https://Cherry-Areka.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Areka 的小窝</rights>
     <entry>
         <title type="html"><![CDATA[路径求交]]></title>
-        <id>https://cherry-areka.github.io/post/lu-jing-qiu-jiao/</id>
-        <link href="https://cherry-areka.github.io/post/lu-jing-qiu-jiao/">
+        <id>https://Cherry-Areka.github.io/post/lu-jing-qiu-jiao/</id>
+        <link href="https://Cherry-Areka.github.io/post/lu-jing-qiu-jiao/">
         </link>
         <updated>2021-09-07T08:03:49.000Z</updated>
         <content type="html"><![CDATA[<blockquote>
@@ -52,8 +52,8 @@
     </entry>
     <entry>
         <title type="html"><![CDATA[P4032 Solution]]></title>
-        <id>https://cherry-areka.github.io/post/p4032-solution/</id>
-        <link href="https://cherry-areka.github.io/post/p4032-solution/">
+        <id>https://Cherry-Areka.github.io/post/p4032-solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/p4032-solution/">
         </link>
         <updated>2021-09-07T08:03:15.000Z</updated>
         <content type="html"><![CDATA[<h3 id="题意">题意</h3>
@@ -255,8 +255,8 @@ signed main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[P7771 Solution]]></title>
-        <id>https://cherry-areka.github.io/post/p7771-solution/</id>
-        <link href="https://cherry-areka.github.io/post/p7771-solution/">
+        <id>https://Cherry-Areka.github.io/post/p7771-solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/p7771-solution/">
         </link>
         <updated>2021-09-07T08:02:52.000Z</updated>
         <content type="html"><![CDATA[<p>提供链式前向星思路，本质是打乱 <code>nxt</code> 指针。</p>
@@ -383,8 +383,8 @@ signed main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[UVA210-Solution]]></title>
-        <id>https://cherry-areka.github.io/post/UVA210-Solution/</id>
-        <link href="https://cherry-areka.github.io/post/UVA210-Solution/">
+        <id>https://Cherry-Areka.github.io/post/UVA210-Solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/UVA210-Solution/">
         </link>
         <updated>2021-07-11T09:29:32.000Z</updated>
         <content type="html"><![CDATA[<h2 id="这个题是-刘骗子-算法竞赛入门经典-学习-deque-的例题">这个题是 <s>刘骗子</s> 《算法竞赛入门经典》 学习 deque 的例题</h2>
@@ -555,8 +555,8 @@ _.pop_back(); 删除尾部
     </entry>
     <entry>
         <title type="html"><![CDATA[UVA1589-Solution]]></title>
-        <id>https://cherry-areka.github.io/post/UVA1589-Solution/</id>
-        <link href="https://cherry-areka.github.io/post/UVA1589-Solution/">
+        <id>https://Cherry-Areka.github.io/post/UVA1589-Solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/UVA1589-Solution/">
         </link>
         <updated>2021-07-11T09:28:59.000Z</updated>
         <content type="html"><![CDATA[<p>新思路:</p>
@@ -701,8 +701,8 @@ int main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[SP8374-Solution]]></title>
-        <id>https://cherry-areka.github.io/post/SP8374-Solution/</id>
-        <link href="https://cherry-areka.github.io/post/SP8374-Solution/">
+        <id>https://Cherry-Areka.github.io/post/SP8374-Solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/SP8374-Solution/">
         </link>
         <updated>2021-07-11T09:28:30.000Z</updated>
         <summary type="html"><![CDATA[<p>前两篇题解做法欠妥，正解复杂度应是<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mn>1</mn><mo>)</mo></mrow><annotation encoding="application/x-tex">O(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></p>
@@ -807,8 +807,8 @@ signed main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[CF524A-Solution]]></title>
-        <id>https://cherry-areka.github.io/post/CF524A-Solution/</id>
-        <link href="https://cherry-areka.github.io/post/CF524A-Solution/">
+        <id>https://Cherry-Areka.github.io/post/CF524A-Solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/CF524A-Solution/">
         </link>
         <updated>2021-07-11T09:28:01.000Z</updated>
         <summary type="html"><![CDATA[<h1 id="题意">题意</h1>
@@ -934,8 +934,8 @@ signed main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[CF209A-Solution]]></title>
-        <id>https://cherry-areka.github.io/post/CF209A-Solution/</id>
-        <link href="https://cherry-areka.github.io/post/CF209A-Solution/">
+        <id>https://Cherry-Areka.github.io/post/CF209A-Solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/CF209A-Solution/">
         </link>
         <updated>2021-07-11T09:27:21.000Z</updated>
         <content type="html"><![CDATA[<h2 id="题意">题意</h2>
@@ -1053,8 +1053,8 @@ signed main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[P4805-solution]]></title>
-        <id>https://cherry-areka.github.io/post/P4805-solution/</id>
-        <link href="https://cherry-areka.github.io/post/P4805-solution/">
+        <id>https://Cherry-Areka.github.io/post/P4805-solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/P4805-solution/">
         </link>
         <updated>2021-07-11T09:26:35.000Z</updated>
         <content type="html"><![CDATA[<h2 id="题意">题意</h2>
@@ -1141,8 +1141,8 @@ signed main() {
     </entry>
     <entry>
         <title type="html"><![CDATA[UVA12663 Solution]]></title>
-        <id>https://cherry-areka.github.io/post/UVA12663-Solution/</id>
-        <link href="https://cherry-areka.github.io/post/UVA12663-Solution/">
+        <id>https://Cherry-Areka.github.io/post/UVA12663-Solution/</id>
+        <link href="https://Cherry-Areka.github.io/post/UVA12663-Solution/">
         </link>
         <updated>2021-07-11T09:24:45.000Z</updated>
         <content type="html"><![CDATA[<h2 id="题目大意">题目大意</h2>
