@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://Cherry-Areka.github.io/</id>
     <title>Areka 的小窝</title>
-    <updated>2021-09-07T08:25:54.924Z</updated>
+    <updated>2021-09-09T11:23:14.393Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://Cherry-Areka.github.io/"/>
     <link rel="self" href="https://Cherry-Areka.github.io/atom.xml"/>
@@ -10,6 +10,128 @@
     <logo>https://Cherry-Areka.github.io/images/avatar.png</logo>
     <icon>https://Cherry-Areka.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Areka 的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[P4200 Solution 咕咕咕中……]]></title>
+        <id>https://Cherry-Areka.github.io/post/p4200-solution-gu-gu-gu-zhong/</id>
+        <link href="https://Cherry-Areka.github.io/post/p4200-solution-gu-gu-gu-zhong/">
+        </link>
+        <updated>2021-09-09T11:16:10.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="p4200-千山鸟飞绝"><code>P4200</code> 千山鸟飞绝</h1>
+<p>Update in 2021/9/9：咕咕咕咕了 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>⋯</mo></mrow><annotation encoding="application/x-tex">\cdots</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.31em;vertical-align:0em;"></span><span class="minner">⋯</span></span></span></span></p>
+<h2 id="题意">题意</h2>
+<p>有一些鸟到处飞，我们记它的权值为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi><mi>a</mi><mi>l</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">val1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord">1</span></span></span></span>，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi><mi>a</mi><mi>l</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">val2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord">2</span></span></span></span>，它本身的属性为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>a</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">dal</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span>，鸟飞到一些地方，这些地方可能会有另外一些鸟，此时他的权值就变为(设 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>x</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">maxx</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mord mathdefault">x</span></span></span></span> 为这些鸟中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>a</mi><mi>l</mi></mrow><annotation encoding="application/x-tex">dal</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span></span></span></span> 的最大值， <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi><mi>a</mi><mi>x</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">maxy</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">m</span><span class="mord mathdefault">a</span><span class="mord mathdefault">x</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span></span></span></span> 为这些鸟的数量) <code>val1 = max(val1, dal) val2 = max(val2, maxy)</code>，我们的任务是求出每只鸟 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>v</mi><mi>a</mi><mi>l</mi><mn>1</mn><mo>∗</mo><mi>v</mi><mi>a</mi><mi>l</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">val1 * val2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord">1</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord">2</span></span></span></span> 的值。</p>
+<h2 id="分析">分析</h2>
+<h3 id="首先来讲暴力">首先来讲暴力</h3>
+<ul>
+<li>
+<p>我们对于每个位置建立一颗平衡树，使用 <code>map</code> 记录位置，每次鸟飞进或飞出的时候暴力查找更新即可，期望得分：<code>50</code>，实际<s>写挂了</s>得分：<code>20</code>。</p>
+</li>
+<li>
+<p><code>Code</code>(不含平衡树板子)：</p>
+<pre><code class="language-cpp">Balanced_Tree T;
+map &lt;pii, int&gt; rt1;
+int Rt[maxn];
+
+int n, t, cnt;
+
+class Birds {
+    public:
+        int w, x, y;
+        int val1, val2;
+};
+
+Birds a[maxn];
+
+queue &lt;int&gt; qs;
+inline void Go_Through(int Rt, int x, int y) {
+    if(!Rt)
+        return;
+    qs.push(Rt);
+    while(!qs.empty()) {
+        int p = qs.front(); qs.pop();
+        int id = T.Get_id(p);
+        a[id].val1 = max(a[id].val1, x),
+        a[id].val2 = max(a[id].val2, y);
+        int ls = T.Get_ls(p), rs = T.Get_rs(p);
+        if(ls)
+            qs.push(ls);
+        if(rs)
+            qs.push(rs);
+    }
+}
+
+signed main() {
+    n = read();
+    for(int i = 1; i &lt;= n; ++i) {
+        a[i].w = read(), a[i].x = read(), a[i].y = read();
+        if(!rt1[mpe(a[i].x, a[i].y)])
+            rt1[mpe(a[i].x, a[i].y)] = ++cnt;
+        int &amp;rt = Rt[rt1[mpe(a[i].x, a[i].y)]];
+        Go_Through(rt, a[i].w, T.Size(rt));
+        T.Insert(rt, a[i].w, i);
+    }
+    
+    t = read();
+    for(int i = 1; i &lt;= t; ++i) {
+        int id = read(), x = read(), y = read();
+        if(x == a[id].x and y == a[id].y)
+            continue;
+        if(!rt1[mpe(x, y)])
+            rt1[mpe(x, y)] = ++cnt;
+        int &amp;rt = Rt[rt1[mpe(x, y)]];
+        int &amp;old_rt = Rt[rt1[mpe(a[id].x, a[id].y)]];
+        T.Remove(old_rt, a[id].w);
+        Go_Through(old_rt, a[id].w, T.Size(old_rt));
+        a[id].x = x, a[id].y = y;
+        if(rt == 0) {
+            T.Insert(rt, a[id].w, id);
+            continue;
+        }
+        int sz = T.Size(rt), val = T.Val(rt, sz);
+        Go_Through(rt, a[id].w, sz);
+        a[id].val1 = max(a[id].val1, val),
+        a[id].val2 = max(a[id].val2, sz);
+        T.Insert(rt, a[id].w, id);
+    }
+    
+    for(int i = 1; i &lt;= n; ++i)
+        // printf(&quot;%lld %lld\n&quot;, a[i].val1, a[i].val2);
+        printf(&quot;%lld\n&quot;, a[i].val1 * a[i].val2);
+
+    #ifndef ONLINE_JUDGE
+        getchar();
+    #endif
+    return 0;
+}
+</code></pre>
+</li>
+</ul>
+<h3 id="接下来我们来思考正解">接下来我们来思考正解。</h3>
+<ul>
+<li>
+<p>首先我们可以把鸟的飞的操作分离出来单独计算贡献，分别为</p>
+<ol>
+<li>鸟飞离原鸟群对自己。</li>
+<li>鸟飞离原鸟群对原鸟群中的鸟。</li>
+<li>鸟飞入现鸟群对自己。</li>
+<li>鸟飞入现鸟群对现鸟群中的鸟。</li>
+</ol>
+</li>
+<li>
+<p>我们发现，对于 <code>1、3</code> 计算贡献，我们只需 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>l</mi><mi>o</mi><msub><mi>g</mi><mn>2</mn></msub><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(log_2n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">o</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03588em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span> 计算鸟群的最大值和大小即可。</p>
+</li>
+<li>
+<p>对于 <code>2、4</code> 操作，我们可以使用懒标记，使用懒标记需要应对的问题就是，如果下一秒有新的鸟飞入或离开鸟群，我们该如何处理。</p>
+<p>我们可以考虑 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>l</mi><mi>a</mi><mi>z</mi><mi>y</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">lazy1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.01968em;">l</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.04398em;">z</span><span class="mord mathdefault" style="margin-right:0.03588em;">y</span><span class="mord">1</span></span></span></span> 标记，也就是权值的标记何时更新：在鸟飞入或离开的时候。</p>
+<p>那么鸟飞入的时候，我们如何可以保证新飞入的鸟不被之前的懒标记传播到？</p>
+<p>在  <code>Split</code>  的时候动一下手脚即可。</p>
+</li>
+<li>
+<p>那么解决完懒标记的问题，我们就可以把这道题愉快的解决啦！</p>
+</li>
+</ul>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[路径求交]]></title>
         <id>https://Cherry-Areka.github.io/post/lu-jing-qiu-jiao/</id>
@@ -1137,83 +1259,6 @@ signed main() {
     return 0;
 }
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[UVA12663 Solution]]></title>
-        <id>https://Cherry-Areka.github.io/post/UVA12663-Solution/</id>
-        <link href="https://Cherry-Areka.github.io/post/UVA12663-Solution/">
-        </link>
-        <updated>2021-07-11T09:24:45.000Z</updated>
-        <content type="html"><![CDATA[<h2 id="题目大意">题目大意</h2>
-<p>给定桥的高度，共有 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">m</span></span></span></span> 次操作，每次操作在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>L</mi><mi>a</mi><mi>s</mi><mi>t</mi><mo separator="true">,</mo><mi>u</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">(Last, u]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">u</span><span class="mclose">]</span></span></span></span> 之间的桥会被淹没，求最后被淹没次数 $&gt;=k $ 的桥的个数，其中 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>a</mi><mi>s</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">Last</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span></span></span></span> 为上一次的水位。</p>
-<h2 id="分析">分析</h2>
-<ul>
-<li>
-<p>暴力：每次暴力查找记录次数，复杂度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><msup><mi>n</mi><mn>2</mn></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n ^ 2)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.02778em;">O</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span>。</p>
-</li>
-<li>
-<p>正解：我们发现<strong>每次操作在 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mi>L</mi><mi>a</mi><mi>s</mi><mi>t</mi><mo separator="true">,</mo><mi>u</mi><mo>]</mo></mrow><annotation encoding="application/x-tex">(Last, u]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">u</span><span class="mclose">]</span></span></span></span> 之间的桥会被淹没</strong>相当于对区间 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><msub><mi>k</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>k</mi><mn>2</mn></msub><mo>]</mo></mrow><annotation encoding="application/x-tex">(k_1,k_2]</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">]</span></span></span></span> 进行区间加，且满足 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>a</mi><mi>s</mi><mi>t</mi><mo>&lt;</mo><mi>h</mi><mo>(</mo><msub><mi>k</mi><mn>1</mn></msub><mo>)</mo><mo>≤</mo><mi>h</mi><mo>(</mo><msub><mi>k</mi><mn>2</mn></msub><mo>)</mo><mo>≤</mo><mi>u</mi></mrow><annotation encoding="application/x-tex">Last &lt; h(k_1) \leq h(k_2) \leq u</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.72243em;vertical-align:-0.0391em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mord mathdefault">s</span><span class="mord mathdefault">t</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">u</span></span></span></span>，因此我们可以在最开始进行排序，保证桥的高度单调有序，然后使用 <code>lower_bound</code> 求取 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>k</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">k_1,k_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。</p>
-</li>
-<li>
-<p>为了保证找到第一个 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>h</mi><mo>(</mo><msub><mi>k</mi><mn>2</mn></msub><mo>)</mo><mo>≤</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">h(k_2) \leq v</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">h</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">≤</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">v</span></span></span></span> 的 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">k_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 我们需要记录一个负的桥高，利用 <code>lower_bound</code> 找到 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">k_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>。</p>
-</li>
-</ul>
-<h2 id="code码量最少的最优解哦">Code(码量最少的最优解哦)</h2>
-<pre><code class="language-cpp">const int maxn = 1e5 + 1;
-
-int n, m, k, Last;
-int a1[maxn], a2[maxn];
-int b[maxn];
-
-signed main() {
-    int p = 1;
-    while(scanf(&quot;%d%d%d&quot;, &amp;n, &amp;m, &amp;k) != EOF) {
-        
-        memset(b, 0, sizeof(b));
-        memset(a1, 0, sizeof(a1));
-        memset(a2, 0, sizeof(a2));
-
-        Last = 1;//水位一开始为1
-        for(int i = 1; i &lt;= n; ++i)
-            a1[i] = read(), a2[i] = -a1[i];//记录负的桥高
-
-        sort(a1 + 1, a1 + n + 1);
-        sort(a2 + 1, a2 + n + 1);
-        //进行排序
-
-        for(int i = 1; i &lt;= m; ++i) {
-            //注意水位和桥相等时可以淹到
-            int u = read(), v = read();
-            int k1 = upper_bound(a1 + 1, a1 + n + 1, Last) - a1;
-            int k2 = lower_bound(a2 + 1, a2 + n + 1, -u) - a2;
-            k2 = n - k2 + 1;//找到k1, k2
-            //最初的k2(指定义那一行的k2)是倒数第几个，我们需要将它转化为正数
-            b[k1]++, b[k2 + 1]--;//差分进行区间加
-            Last = v;//更新水位
-        }
-    
-        for(int i = 1; i &lt;= n; ++i)
-            b[i] += b[i - 1];//对差分数组进行前缀和来得到正确的区间加
-
-        int ans = 0;
-        for(int i = 1; i &lt;= n; ++i) {
-            if(b[i] &gt;= k)
-                ans++;//统计答案
-        }
-        
-        printf(&quot;Case %d: %d\n&quot;, p++, ans);
-    }
-    
-    
-    
-    #ifndef ONLINE_JUDGE
-        getchar();
-    #endif
-    return 0;
-}
-</code></pre>
-<h2 id="完结撒花">完结撒花！</h2>
 ]]></content>
     </entry>
 </feed>
